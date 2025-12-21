@@ -1,0 +1,33 @@
+@use './vars' as *;
+@use './mixins' as *;
+
+.description {
+  background-color: $bg-color-secondary;
+  padding: 48px 0;
+  @include onTablet {
+    padding: 120px 0;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include onTablet {
+      flex-direction: row;
+    }
+    @include onDesktop {
+      gap: 110px;
+    }
+  }
+  &__title {
+    @include onTablet {
+      flex: 1 1 498px;
+    }
+  }
+
+  &__text {
+    letter-spacing: var(--font-letter-spacing);
+    @include onTablet {
+      flex: 1 1 411px;
+    }
+  }
+}

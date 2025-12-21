@@ -1,0 +1,12 @@
+@use './vars' as *;
+
+@mixin onTablet {
+  @media (min-width: $tablet-screen) {
+    @content;
+  }
+}
+@mixin onDesktop {
+  @media (min-width: $desktop-screen) {
+    @content;
+  }
+}
