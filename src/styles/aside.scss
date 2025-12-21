@@ -14,7 +14,8 @@
 
   &__links {
     margin-top: 60px;
-    @include onTablet {
+
+    @include on-tablet {
       margin-top: 92px;
     }
   }

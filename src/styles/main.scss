@@ -14,11 +14,11 @@ html {
   padding: 0 $container-inline-padding;
   margin: 0 auto;
 
-  @include onTablet {
+  @include on-tablet {
     padding: 0 72px;
   }
 
-  @include onDesktop {
+  @include on-desktop {
     padding: 0;
   }
 }
@@ -33,10 +33,12 @@ html {
   background-size: cover;
   background-position: center;
   aspect-ratio: 320 / 200;
-  @include onTablet {
+
+  @include on-tablet {
     aspect-ratio: 744 / 400;
   }
-  @include onDesktop {
+
+  @include on-desktop {
     aspect-ratio: 1260 / 460;
   }
 }
@@ -54,7 +56,7 @@ html {
   border-radius: $radius-UI-component;
   transition: background-color $transition-duration ease;
 
-  @include onDesktop {
+  @include on-desktop {
     width: 324px;
   }
   &:hover {

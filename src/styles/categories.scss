@@ -3,13 +3,15 @@
 
 .categories {
   padding: 49px 0 96px;
-  @include onTablet {
+
+  @include on-tablet {
     padding: 60px 0 120px;
   }
 
   &__title {
     margin-bottom: 47px;
-    @include onTablet {
+
+    @include on-tablet {
       margin-bottom: 56px;
     }
   }
@@ -32,7 +34,8 @@
   &__article-image {
     aspect-ratio: 1 / 1;
     margin: 0;
-    @include onTablet {
+
+    @include on-tablet {
       aspect-ratio: 498 / 324;
     }
   }
@@ -42,7 +45,8 @@
     font-size: 18px;
     font-weight: var(--font-weight-title);
     line-height: var(--font-line-haight-regular);
-    @include onTablet {
+
+    @include on-tablet {
       font-size: 24px;
     }
   }

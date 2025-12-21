@@ -8,7 +8,8 @@
   background-size: cover;
   background-position: center center;
   padding: 0 0 40px;
-  @include onTablet {
+
+  @include on-tablet {
     padding: 0 0 64px;
     background-image: url(../image/header-dekstop.jpg);
   }

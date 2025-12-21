@@ -1,9 +1,12 @@
+
 // screens
 $tablet-screen: 744px;
 $desktop-screen: 1260px;
+
 // container
 $container-max-width: 1020px;
 $container-inline-padding: 20px;
+
 // color palette
 $COLOR-black-900: #1b2129;
 $COLOR-black-950: #010810;
@@ -14,6 +17,7 @@ $COLOR-grey-100: #f9f9f9;
 $COLOR-white: #fff;
 $COLOR-orange-500: #f98921;
 $COLOR-cream-50: #fcfaef;
+
 // font
 $font-family: "Manrope", sans-serif;
 $font-color-primary: $COLOR-black-900;
@@ -33,9 +37,11 @@ $font-color-muted-lite: $COLOR-grey-400; //contacts
   --article-gap-column: 20px;
   --article-gap-row: 40px;
 }
+
 // backgrounds
 $bg-color-secondary: $COLOR-cream-50;
 $bg-color-main: $COLOR-grey-100;
+
 // buttons
 $border-color: $COLOR-grey-200;
 $color-accent: $COLOR-orange-500;

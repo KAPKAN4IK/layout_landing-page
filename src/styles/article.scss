@@ -1,9 +1,11 @@
+
 @use './vars' as *;
 @use './mixins' as *;
 
 .article {
   flex: 100px 1 1;
-  @include onTablet {
+
+  @include on-tablet {
     max-width: 600px;
   }
 
@@ -41,10 +43,12 @@
     margin-bottom: 12px;
     letter-spacing: var(--font-letter-spacing);
     line-height: var(--font-line-haight-regular);
-    @include onTablet {
+
+    @include on-tablet {
       margin-bottom: 34px;
     }
-    @include onDesktop {
+
+    @include on-desktop {
       margin-bottom: 12px;
     }
   }
