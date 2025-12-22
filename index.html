@@ -6,7 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>Live with music</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="src/styles/index.scss"
     />
+    <link rel="icon" href="./src/image/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="./src/image/icons/favicon.ico">
     <script
       src="src/scripts/main.js"
       defer
@@ -214,21 +216,6 @@
                     </a>
                   </article>
                 </li>
-                <li class="categories__item">
-                  <article class="categories__article article">
-                    <a href="#" class="article__link">
-                      <img
-                        width="130"
-                        height="130"
-                        loading="lazy"
-                        decoding="async"
-                        src="./src/image/product1.jpg"
-                        alt="Portable speakers model: AS50"
-                        class="article__image categories__article-image"
-                      >
-                    </a>
-                  </article>
-                </li>
               </ul>
             </dd>
             <dt class="categories__name">Portable speakers</dt>
@@ -328,21 +315,24 @@
               type="text"
               class="form__input"
               placeholder="Name"
+              required
             >
             <input
               name="form"
               type="email"
               class="form__input"
               placeholder="Email"
+              required
             >
             <textarea
               name="form"
               rows="1"
               class="form__input form__textarea"
               placeholder="Message"
+              required
               oninput="this.style.height='auto'; this.style.height=this.scrollHeight+'px';"
             ></textarea>
-            <button class="form__submit button" type="submit">Send</button>
+            <button class="form__submit button" type="reset">Send</button>
           </form>
           <div class="footer__contacts contacts">
             <dl class="contacts__item">

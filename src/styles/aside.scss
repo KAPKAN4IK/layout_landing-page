@@ -6,10 +6,16 @@
   inset: 0;
   transform: translateX(-100%);
   background-color: $bg-color-main;
-  transition: transform $transition-duration ease;
+  transition: transform $transition-duration ease,
+    visibility 0s linear $transition-duration;
+  visibility: hidden;
 
   &.aside--active {
     transform: translateX(0);
+    pointer-events: auto;
+    visibility: visible;
+    transition: transform $transition-duration ease,
+      visibility 0s linear;
   }
 
   &__links {
