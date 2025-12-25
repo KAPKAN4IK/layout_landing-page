@@ -93,6 +93,10 @@
   &__link-logo {
     height: 16px;
     width: min-content;
+    transition: transform $transition-duration ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   &__link-image-logo {
