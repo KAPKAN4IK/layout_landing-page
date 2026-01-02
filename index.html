@@ -25,31 +25,32 @@
       defer
     ></script>
   </head>
-  <body>
+  <body class="nav--fixed">
+    <span class="scroll-tracker"></span>
     <header class="header">
+      <nav class="header__nav nav">
+        <ul class="nav__list container">
+          <li class="nav__item nav__item-logo">
+            <a href="#" class="nav__link nav__link-logo">
+              <img
+                src="src/image/logo.png"
+                alt="Bang & Olufsen"
+                class="nav__link-image-logo">
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="tel:+123455555555" class="nav__link">
+              <div class="nav__link-image nav__link-image--phone"></div>
+            </a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__link" data-burger="open">
+              <div class="nav__link-image nav__link-image--burger"></div>
+            </button>
+          </li>
+        </ul>
+      </nav>
       <div class="header__main container">
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item nav__item-logo">
-              <a href="#" class="nav__link nav__link-logo">
-                <img
-                  src="src/image/logo.png"
-                  alt="Bang & Olufsen"
-                  class="nav__link-image-logo">
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="tel:+123455555555" class="nav__link">
-                <div class="nav__link-image nav__link-image--phone"></div>
-              </a>
-            </li>
-            <li class="nav__item">
-              <button class="nav__link" data-burger="open">
-                <div class="nav__link-image nav__link-image--burger"></div>
-              </button>
-            </li>
-          </ul>
-        </nav>
         <h1 class="header__title title">Your senses.<br>Set free.</h1>
       </div>
     </header>
@@ -96,7 +97,7 @@
                 </a>
               </li>
               <li class="aside__links-item">
-                <a href="#" class="aside__links-link aside__links-link--tel">
+                <a href="tel:+123455555555" class="aside__links-link aside__links-link--tel">
                   <span>+1 234 5555-55-55</span>
                   <span>call to order</span>
                 </a>
@@ -346,7 +347,13 @@
               required
               oninput="this.style.height='auto'; this.style.height=this.scrollHeight+'px';"
             ></textarea>
-            <button class="form__submit button" type="reset">Send</button>
+            <button
+              class="form__submit button"
+              type="submit"
+              onsubmit="this.reset(); return false;"
+            >
+              Send
+            </button>
           </form>
           <div class="footer__contacts contacts">
             <dl class="contacts__item">

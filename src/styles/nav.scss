@@ -2,10 +2,10 @@
 @use './mixins' as *;
 
 .nav {
-  padding-top: 24px;
+  padding: 24px 0;
 
   @include on-tablet {
-    padding-top: 32px;
+    padding: 32px 0;
   }
 
   &__list {
@@ -47,7 +47,7 @@
           content: '+1 234 555-55-55';
           position: absolute;
           left: -167px;
-
+          padding-right: 10px;
           letter-spacing: 2px;
           line-height: 32px;
           color: $font-color-primary;

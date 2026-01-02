@@ -8,8 +8,32 @@ html {
   font-size: var(--font-size);
   font-weight: var(--font-weight-text);
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 
+body:has(.aside--active){
+  overflow: hidden;
+}
+
+body.nav--fixed .nav {
+  padding: 14px 0;
+  background-color: $bg-color-main;
+}
+
+.main {
+  z-index: 1;
+  background-color: $COLOR-white;
+}
+
+.scroll-tracker {
+  display: block;
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
 
 .container {
   max-width: $container-max-width;

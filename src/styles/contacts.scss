@@ -2,6 +2,9 @@
 @use './mixins' as *;
 
 .footer {
+  position: sticky;
+  z-index: -1;
+  bottom: 0;
   padding: 64px 0;
 
   @include on-tablet {
