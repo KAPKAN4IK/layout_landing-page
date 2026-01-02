@@ -16,13 +16,13 @@ aside.addEventListener('click', () => {
   aside.classList.remove('aside--active');
 });
 
-const body = document.querySelector('body');
-const sentinel = document.querySelector('#scroll-tracker');
+const body = document.querySelector('.body');
+const sentinel = document.querySelector('.scroll-tracker');
 
-const observer = new IntersectionObserver (([entry]) => {
-    body.classList.toggle('nav--fixed', !entry.isIntersecting)
+const observer = new IntersectionObserver(([entry]) => {
+  body.classList.toggle('nav--fixed', !entry.isIntersecting)
   },
-  { threshold: 1 }
+  { threshold: 1 },
 );
 
 observer.observe(sentinel);

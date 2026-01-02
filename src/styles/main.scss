@@ -21,7 +21,8 @@ body.nav--fixed .nav {
 }
 
 .main {
-  z-index: 1;
+  position: relative;
+  z-index: 2;
   background-color: $COLOR-white;
 }
 
@@ -30,7 +31,7 @@ body.nav--fixed .nav {
   height: 1px;
   width: 1px;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 0;
   pointer-events: none;
 }
